@@ -3,9 +3,22 @@
     <head>
         <title>Search</title>
         <style>
-            .links{
+            .links
+            {
                 text-align: right;
             }
+            
+            .search_element
+            {   
+                text-align: center; 
+                border-radius: 40px;
+            }
+            .search_button
+            {
+                text-align: center;
+            }
+            
+
         </style>
 
     </head>
@@ -14,9 +27,17 @@
             <a href="image_search.html">image_search</a>
             <a href="advanced_search.html">advanced_search</a>
         </div>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+
+        <div class="search_element">
+            <form action="https://www.google.com/search">
+                <input type="text" name="q" id="1000">
+            </form>
+        </div>
+        
+        <div class="search_button">
+            <form action="https://www.google.com/search">
+                <input type="submit" value="Google Search"> 
+            </form>
+        </div>
     </body>
 </html>
