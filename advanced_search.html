@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>advanced_search</title>
+    </head>
+    <style>
+        body
+        {
+            font-family: arial,sans-serif;
+        }
+        .upbar
+        {
+            margin-left: 20px;
+            margin-top: 50px;
+            padding-bottom: 20px;
+            font-size: large;
+            color: #d93025;
+        }
+        .line
+        {
+            padding-left: 0%;
+            padding-top: 20px;
+            width: 100%;
+            align-self: center;
+        }
+        .find_pages
+        {
+            margin-left: 20px;
+            padding-bottom: 20px;
+        }
+        .search_box_to_do
+        {
+            margin-left: 1200px;
+            margin-top: 0.5px;
+        }
+        .form
+        {
+            font-size: small;
+            margin-left: 20px;
+        }
+        #first_box , #second_box , #third_box , #forth_box
+        {
+            width: 40%;
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 73px;
+        }
+        #second_box
+        {
+            
+            margin-left: 10px;
+        }
+        #third_box
+        {
+            
+            margin-left: 45px;
+        }
+        #forth_box
+        {
+            margin-left: 36px;
+        }
+        #submit_button
+        {
+            border-radius: 10px;
+            height: 30px;
+            font-size: 11px;
+            margin-left: 1200px;
+            background: #aecbfa;
+            color: white;
+
+        }
+        
+    </style>
+    <body>
+        <div class="upbar">
+            <label style="margin-left: 10px;color: red;" >Advanced search</label>
+            <div class="line">
+                <hr>
+            </div>
+        </div>
+        <div class="main">
+            <form action="https://www.google.com/advanced_search">
+                <div class="find_pages">
+                    <span>Find pages with...</span>
+                    <div class="search_box_to_do">
+                        to do in the search box
+                    </div>
+                </div>
+                <div class="form">
+                    <label for="first_box">all these words</label>
+                    <input type="text" name="q" id="first_box">
+                        <div class="second row">
+                            <label for="second_box">this exact word or phrase:</label>
+                        <input type="text" name="q" id="second_box"> 
+                        <div class="third_row">
+                            <label for="third_box">any of these words:</label>
+                            <input type="text" name="q" id="third_box">
+                        </div>
+                        <div class="forth_row">
+                            <label for="forth_box">none of these words:</label>
+                            <input type="text" name="q" id="forth_box">
+                        </div>   
+                    </div>
+                    
+                </div>
+                <input type="submit" value="Advanced Search" id="submit_button"> 
+            </form>
+        </div>
+    </body>
+</html>
